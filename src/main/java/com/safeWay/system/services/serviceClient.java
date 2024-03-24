@@ -1,5 +1,6 @@
 package com.safeWay.system.services;
 
+// import org.hibernate.mapping.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ public class serviceClient {
 
   @Autowired
   clientRepository clientRepository;
+
   @Autowired
   enterpriseRepository enterpriseRepository;
 
@@ -57,6 +59,7 @@ public class serviceClient {
   }
 
   public String notification() {
+
     return "";
   }
 
@@ -76,6 +79,13 @@ public class serviceClient {
 
     return message;
   }
+
+  // // public List<Client> getClients(Long cnpj){
+
+
+  //  List<Client> clients = clientRepository.findAll();
+
+  // }
 
   public String setDeposito(Long id, double value) throws Exception {
 
